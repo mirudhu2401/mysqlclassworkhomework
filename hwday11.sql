@@ -22,8 +22,8 @@ VALUES
 
 SELECT customer_name,
 CASE 
-WHEN total_purchase > 50000 THEN 'premium'
-WHEN total_purchase > 20000 THEN 'standard'
+    WHEN total_purchase > 50000 THEN 'premium'
+    WHEN total_purchase > 20000 THEN 'standard'
 ELSE 'Basic'
 END AS customer_segment
 FROM customers;
